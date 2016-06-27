@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"count\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"environment:QA\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"environment:TST1\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"environment:TST2\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"environment:TST3\",\"analyze_wildcard\":true}}}}],\"row\":true}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"metrics-*\",\"query\":{\"query_string\":{\"query\":\"name:com.codahale.metrics.servlet.AbstractInstrumentedFilter.activeRequests\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Metrics-ActiveRequests"
+}

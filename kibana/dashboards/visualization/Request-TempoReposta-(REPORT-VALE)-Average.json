@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTime\"}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"query\":\"environment:VALE-PRD AND NOT(servername:*servico*)\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Request-TempoReposta (REPORT VALE) - Average"
+}

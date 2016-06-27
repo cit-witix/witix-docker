@@ -1,0 +1,9 @@
+{
+  "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"h\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"field\":\"module\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5},\"schema\":\"group\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addLegend\":false,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"type\":\"histogram\"}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"environment:VALE-PRD\"}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Request-HistogramaPorModulo-Ultimos7Dias"
+}

@@ -1,0 +1,10 @@
+{
+  "hits": 0, 
+  "description": "", 
+  "title": "Request-Browsers", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Request-Browsers\",\"row\":4,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":6,\"id\":\"Request-HistogramaSplitEnv\",\"row\":1,\"size_x\":7,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-Browser-NotSupported\",\"row\":7,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"Request-Browser-NotSupported\",\"row\":7,\"size_x\":9,\"size_y\":3,\"type\":\"search\"},{\"id\":\"Request-Browsers-PorServer\",\"type\":\"visualization\",\"size_x\":5,\"size_y\":3,\"col\":1,\"row\":1}]", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+  }
+}

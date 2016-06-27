@@ -1,0 +1,10 @@
+{
+  "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"elapsedTime:[0 TO 1000]\"}}}},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"elapsedTime:[1001 TO 10000]\"}}}},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"elapsedTime:[10001 TO 100000]\"}}}},{\"input\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"elapsedTime:[100001 TO *]\"}}}}]},\"schema\":\"group\",\"type\":\"filters\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"type\":\"histogram\"}", 
+  "description": "", 
+  "title": "Update Trem", 
+  "version": 1, 
+  "savedSearchId": "Database-Tiago", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"elapsedTime:[0 TO 1000]\"}},\"meta\":{\"index\":\"database-*\",\"key\":\"query\",\"value\":\"elapsedTime:[0 TO 1000]\",\"disabled\":false,\"negate\":true,\"apply\":true}}]}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"table\",\"params\":{\"perPage\":7,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1.90\"}},{\"id\":\"3\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"1\",\"type\":\"percentiles\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTime\",\"percents\":[70,90]}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Request-TopPercentiles"
+}

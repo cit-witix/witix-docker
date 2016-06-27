@@ -1,0 +1,10 @@
+{
+  "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:\\\"*Usuario - Usuario*\\\"\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:\\\"Usuario - Sem usu\u00e1rio no contexto\\\"\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}", 
+  "description": "", 
+  "title": "ValeAuditoria-Pie Chart", 
+  "version": 1, 
+  "savedSearchId": "ValeAuditoria-Usu\u00e1rios", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[]}"
+  }
+}

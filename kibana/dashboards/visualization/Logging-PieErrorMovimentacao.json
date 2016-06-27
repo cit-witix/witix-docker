@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*to.movimentarTrem.validacao.velocidadeMovimento.maior.que.parametro*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*HibernateOptimisticLockingFailureException*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*to.movimentarTrem.validacao.dataMovimentacao.maior.ultimaMovimentacaoTrem.msg*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*StaleStateException*\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"logging-*\",\"query\":{\"query_string\":{\"query\":\"environment:VALE-PRD AND tag:confirmacaoMovimentacaoJob\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Logging-PieErrorMovimentacao"
+}

@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now-24h", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Logging", 
+  "panelsJSON": "[{\"col\":5,\"id\":\"Logging-Histogram\",\"row\":1,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Logging-TableLoggerName\",\"row\":4,\"size_x\":4,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Logging-PieEnvironment\",\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"columns\":[\"level\",\"servername\",\"logger_name\",\"req.requestURI\",\"message\"],\"id\":\"Logging-Today\",\"row\":4,\"size_x\":8,\"size_y\":5,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"}]", 
+  "timeTo": "now", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logging-*\",\"key\":\"level\",\"value\":\"error\",\"disabled\":true,\"negate\":false},\"query\":{\"match\":{\"level\":{\"query\":\"error\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "hits": 0, 
+  "timeRestore": false, 
+  "description": "", 
+  "title": "UserResposeTime", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Request-PercentilesTempoResposta\",\"row\":4,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":3,\"id\":\"Request-Pie-SumExecutionTimePerUser\",\"row\":1,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Request-Bar-AverageExecutionTimeFunc\",\"row\":1,\"size_x\":8,\"size_y\":7,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-Pie-Username\",\"row\":1,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"}]", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"request-*\",\"key\":\"username\",\"value\":\"proc470\",\"disabled\":false,\"negate\":true},\"query\":{\"match\":{\"username\":{\"query\":\"proc470\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"environment:VALE-PRD\"}}}]}"
+  }
+}

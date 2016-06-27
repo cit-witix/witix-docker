@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now/d", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Metrics", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Metrics-ActiveRequests\",\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Metrics-JVM\",\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Metrics-OS-CPU\",\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Metrics-ActiveSessions\",\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]", 
+  "timeTo": "now/d", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+  }
+}

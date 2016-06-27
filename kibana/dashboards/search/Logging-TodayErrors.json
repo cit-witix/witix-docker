@@ -1,0 +1,20 @@
+{
+  "sort": [
+    "@timestamp", 
+    "desc"
+  ], 
+  "hits": 0, 
+  "description": "", 
+  "title": "Logging-TodayErrors", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"logging-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"logging-*\",\"key\":\"environment\",\"value\":\"VALE-DEV\",\"disabled\":true},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-DEV\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"logging-*\",\"key\":\"environment\",\"value\":\"VALE-HOM\",\"disabled\":true},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-HOM\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"logging-*\",\"key\":\"environment\",\"value\":\"VALE-PRD\",\"disabled\":false},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}}],\"query\":{\"query_string\":{\"query\":\"level:ERROR\",\"analyze_wildcard\":true}}}"
+  }, 
+  "columns": [
+    "level", 
+    "servername", 
+    "logger_name", 
+    "req.requestURI", 
+    "message"
+  ]
+}

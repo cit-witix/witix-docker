@@ -1,0 +1,20 @@
+{
+  "sort": [
+    "@timestamp", 
+    "desc"
+  ], 
+  "hits": 0, 
+  "description": "", 
+  "title": "Request-Browser-NotSupported", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}}},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"NOT ((userAgent.browser:IE AND userAgent.browserVersion:11.0) OR (userAgent.browser:firefox AND userAgent.browserVersion:24.0)) OR NOT (userAgent.browser:Chrome)\",\"analyze_wildcard\":true}}}"
+  }, 
+  "columns": [
+    "name", 
+    "servername", 
+    "clientIp", 
+    "userAgent.browser", 
+    "userAgent.browserVersion"
+  ]
+}

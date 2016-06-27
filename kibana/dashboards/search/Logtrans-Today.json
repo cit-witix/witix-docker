@@ -1,0 +1,24 @@
+{
+  "sort": [
+    "@timestamp", 
+    "desc"
+  ], 
+  "hits": 0, 
+  "description": "", 
+  "title": "Logtrans-Today", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"[logtrans-]YYYY-MM\",\"query\":{\"query_string\":{\"query\":\"_type:logtrans\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+  }, 
+  "columns": [
+    "dateStartAction", 
+    "transactionCode", 
+    "actionType", 
+    "userId", 
+    "userIP", 
+    "servername", 
+    "environment", 
+    "elapsedTime", 
+    "userHostName"
+  ]
+}

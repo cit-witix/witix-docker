@@ -1,0 +1,11 @@
+{
+  "hits": 0, 
+  "timeRestore": false, 
+  "description": "", 
+  "title": "Request-Trace", 
+  "panelsJSON": "[\n  {\n    \"col\": 1,\n    \"id\": \"Request-HistogramaPorModulo\",\n    \"row\": 1,\n    \"size_x\": 6,\n    \"size_y\": 3,\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 7,\n    \"id\": \"RequestTrace-Logging\",\n    \"row\": 1,\n    \"size_x\": 6,\n    \"size_y\": 3,\n    \"type\": \"search\",\n    \"columns\": [\n      \"level\",\n      \"logger_name\",\n      \"message\"\n    ],\n    \"sort\": [\n      \"@timestamp\",\n      \"desc\"\n    ]\n  },\n  {\n    \"col\": 1,\n    \"id\": \"RequestTrace-Requests\",\n    \"row\": 4,\n    \"size_x\": 6,\n    \"size_y\": 6,\n    \"type\": \"search\",\n    \"columns\": [\n      \"servername\",\n      \"name\",\n      \"requestId\",\n      \"executionTime\",\n      \"executionCountDb\"\n    ],\n    \"sort\": [\n      \"@timestamp\",\n      \"desc\"\n    ]\n  },\n  {\n    \"id\": \"RequestTrace-SQLs\",\n    \"type\": \"search\",\n    \"size_x\": 6,\n    \"size_y\": 6,\n    \"col\": 7,\n    \"row\": 4,\n    \"columns\": [\n      \"servername\",\n      \"requestId\",\n      \"preparedSql\",\n      \"elapsedTime\"\n    ],\n    \"sort\": [\n      \"@timestamp\",\n      \"desc\"\n    ]\n  }\n]", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\n  \"filter\": [\n    {\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"application:GPVF AND servername:* AND requestId:*\",\n          \"analyze_wildcard\": true\n        }\n      }\n    }\n  ]\n}"
+  }
+}

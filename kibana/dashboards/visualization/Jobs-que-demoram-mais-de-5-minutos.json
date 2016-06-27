@@ -1,0 +1,10 @@
+{
+  "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"field\":\"executionTime\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"id\":\"2\",\"params\":{\"field\":\"tag\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":20},\"schema\":\"segment\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"type\":\"histogram\"}", 
+  "description": "", 
+  "title": "Jobs que demoram mais de 5 minutos", 
+  "version": 1, 
+  "savedSearchId": "[landrade]-Jobs-da-madrugada-que-demoram-mais-de-5-minutos", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[]}"
+  }
+}

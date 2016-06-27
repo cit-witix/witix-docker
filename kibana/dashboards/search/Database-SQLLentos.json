@@ -1,0 +1,21 @@
+{
+  "sort": [
+    "@timestamp", 
+    "desc"
+  ], 
+  "hits": 0, 
+  "description": "", 
+  "title": "Database-SQLLentos", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"database-*\",\"query\":{\"query_string\":{\"query\":\"elapsedTime:[3000 TO *]\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+  }, 
+  "columns": [
+    "servername", 
+    "elapsedTime", 
+    "requestName", 
+    "preparedSqlKey", 
+    "hostname", 
+    "preparedSql"
+  ]
+}

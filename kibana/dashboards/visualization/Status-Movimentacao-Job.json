@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*Registro processado com sucesso*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*Falha ao processar o registroInterfaceControleMovimentacaoSecaoBloqueio*\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[],\"index\":\"logging-*\",\"query\":{\"query_string\":{\"query\":\"tag:'confirmacaoMovimentacaoJob' AND level:\\\"WARN\\\" AND (message:\\\"*Falha ao processar o registroInterfaceControleMovimentacaoSecaoBloqueio*\\\" OR message:\\\"*Registro processado com sucesso*\\\")\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Status Movimentacao Job"
+}

@@ -1,0 +1,24 @@
+{
+  "sort": [
+    "@timestamp", 
+    "desc"
+  ], 
+  "hits": 0, 
+  "description": "", 
+  "title": "Request-Browser", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}}},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"userAgent.browser:IE and NOT userAgent.browserVersion:11.0\",\"analyze_wildcard\":true}}}"
+  }, 
+  "columns": [
+    "name", 
+    "tag", 
+    "servername", 
+    "clientIp", 
+    "executionTime", 
+    "executionTimeDb", 
+    "executionCountDb", 
+    "userAgent.browser", 
+    "userAgent.browserVersion"
+  ]
+}

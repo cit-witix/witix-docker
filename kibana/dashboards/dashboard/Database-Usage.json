@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now-24h", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Database Usage", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Database-HistogramaLentidoes\",\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Database-TableLentidoes\",\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"Database-SQL-Lentos\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Database-Usage-Per-Module\",\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"id\":\"Database-Per-Request\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":7,\"row\":1},{\"id\":\"Database-Slow-Requests\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":7,\"row\":4},{\"id\":\"Database-Slow-Requests-Sum-ElapsedTime\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":10,\"row\":4},{\"id\":\"Database-Response-Time\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":3,\"col\":1,\"row\":4}]", 
+  "timeTo": "now", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"database-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRD\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"application:GPVF AND servername:* AND requestId:*\"}}}]}"
+  }
+}

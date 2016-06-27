@@ -1,0 +1,11 @@
+{
+  "hits": 0, 
+  "timeRestore": false, 
+  "description": "", 
+  "title": "WitixAlertsStatus", 
+  "panelsJSON": "[{\"id\":\"elastalert_status-Histogram-alert_sent_count\",\"type\":\"visualization\",\"size_x\":8,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"elastalert_status-Histogram-count\",\"type\":\"visualization\",\"size_x\":8,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"elastalert_status-PieChart-alert_sent_count\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":2,\"col\":9,\"row\":1},{\"id\":\"elastalert_status-Metric-AlertSentCount\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":2,\"col\":9,\"row\":5},{\"id\":\"elastalert_status-Metric-totalCount\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":2,\"col\":9,\"row\":3},{\"id\":\"elastalert_status-query_all\",\"type\":\"search\",\"size_x\":12,\"size_y\":2,\"col\":1,\"row\":7,\"columns\":[\"hits\",\"matches\",\"rule_name\"],\"sort\":[\"@timestamp\",\"desc\"]}]", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

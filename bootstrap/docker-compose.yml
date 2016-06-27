@@ -1,0 +1,36 @@
+version: '2'
+services:
+    witix-elasticsearch:
+        image: ciandtsoftware/witix-elasticsearch:3.0.2-alpha
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        # uncomment this section to have elasticsearch data persisted to a volume
+        volumes:
+           - ./elasticsearch/data:/usr/share/elasticsearch/data
+        networks:
+            - witix
+    witix-kibana:
+        image: ciandtsoftware/witix-kibana:3.0.2-alpha
+        depends_on: 
+            - witix-elasticsearch
+        ports:
+            - "5601:5601"
+        environment:
+            - ELASTICSEARCH_URL=http://witix-elasticsearch:9200    
+        networks:
+            - witix
+    witix-elastalert:
+        image: ciandtsoftware/witix-elastalert:3.0.2-alpha
+        depends_on: 
+            - witix-elasticsearch
+        volumes:
+            - ./elastalert/conf/config.yaml:/opt/elastalert/config.yaml
+            - ./elastalert/conf/rules/:/opt/elastalert/rules                    
+        networks:
+            - witix
+networks:
+    witix:
+        ipam:
+            config:
+                - subnet: 10.2.2.0/24

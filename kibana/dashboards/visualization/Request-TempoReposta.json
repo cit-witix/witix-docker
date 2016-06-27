@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":false,\"mode\":\"overlap\",\"defaultYExtents\":false,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"times\":[],\"addTimeMarker\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTime\"}},{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTimeDb\"}},{\"id\":\"5\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"custom\",\"customInterval\":\"10m\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Request-TempoReposta"
+}

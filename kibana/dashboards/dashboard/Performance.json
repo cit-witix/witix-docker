@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now/d", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Performance", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Request-CountBigTrouble\",\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-CountSlow\",\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-P90TempoResposta\",\"row\":5,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-MediaTempoResposta\",\"row\":7,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"Request-HistogramTempoResposta\",\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":8,\"columns\":[\"name\",\"tag\",\"servername\",\"clientIp\",\"executionTime\",\"executionTimeDb\",\"executionCountDb\"],\"id\":\"Request-Today\",\"row\":5,\"size_x\":5,\"size_y\":4,\"sort\":[\"executionTime\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"Request-PercentilesTempoResposta\",\"row\":5,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"Request-PieModuleNameTag\",\"type\":\"visualization\",\"size_x\":5,\"size_y\":4,\"col\":8,\"row\":1}]", 
+  "timeTo": "now/d", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"request-*\",\"key\":\"name\",\"negate\":true,\"value\":\"GET /system/ping\"},\"query\":{\"match\":{\"name\":{\"query\":\"GET /system/ping\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRJ\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRJ\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-DEV\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-DEV\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-HOM\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-HOM\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":false,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRD\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"name:*app*\"}}}]}"
+  }
+}

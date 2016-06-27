@@ -1,0 +1,11 @@
+{
+  "hits": 0, 
+  "timeRestore": false, 
+  "description": "", 
+  "title": "UserErrors", 
+  "panelsJSON": "[{\"col\":4,\"id\":\"Logging-Bar-Top10Func\",\"row\":1,\"size_x\":9,\"size_y\":4,\"type\":\"visualization\"},{\"col\":11,\"id\":\"Logging-Count\",\"row\":7,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"Logging-DateHistogram-Count\",\"row\":5,\"size_x\":7,\"size_y\":4,\"type\":\"visualization\"},{\"col\":11,\"id\":\"Logging-ErrorsCount\",\"row\":5,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Logging-Pie-CountUsername\",\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Logging-PieUrl\",\"row\":5,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"level\",\"servername\",\"logger_name\",\"req.requestURI\",\"message\"],\"id\":\"Logging-Today\",\"row\":9,\"size_x\":12,\"size_y\":6,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"}]", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"logging-*\",\"key\":\"username\",\"negate\":true,\"value\":\"proc470\"},\"query\":{\"match\":{\"username\":{\"query\":\"proc470\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":false,\"index\":\"logging-*\",\"key\":\"level\",\"negate\":false,\"value\":\"ERROR\"},\"query\":{\"match\":{\"level\":{\"query\":\"ERROR\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":false,\"index\":\"logging-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRD\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now-24h", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Logtrans", 
+  "panelsJSON": "[{\"id\":\"Logtrans-Tempo-de-Resposta-(segs)\",\"type\":\"visualization\",\"size_x\":9,\"size_y\":2,\"col\":4,\"row\":3},{\"id\":\"Logtrans-Top-Users\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":3},{\"id\":\"Logtrans-Transacoes-Mais-Utilizadas\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":1},{\"id\":\"Logtrans-Utilizacao-Por-Acao\",\"type\":\"visualization\",\"size_x\":9,\"size_y\":2,\"col\":4,\"row\":1},{\"id\":\"Logtrans-Today\",\"type\":\"search\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":5,\"columns\":[\"dateStartAction\",\"transactionCode\",\"actionType\",\"userId\",\"userIP\",\"servername\",\"environment\",\"elapsedTime\",\"userHostName\"],\"sort\":[\"@timestamp\",\"desc\"]}]", 
+  "timeTo": "now", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

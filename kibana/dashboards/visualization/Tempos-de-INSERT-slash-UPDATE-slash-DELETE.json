@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"preparedSql: *update*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"preparedSql: *select*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"preparedSql: *insert*\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"database-*\",\"query\":{\"query_string\":{\"query\":\"environment: \\\"VALE-PRJ\\\" requestId: \\\"d5eaa04b-b378-45b1-b144-bc16e2e742b9\\\"\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Tempos de INSERT/UPDATE/DELETE"
+}

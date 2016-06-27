@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTime\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"exists\":{\"field\":\"tag\"},\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"exists\",\"negate\":false,\"value\":\"tag\"}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"requestId\",\"negate\":false,\"value\":\"5dd038dd-1b56-4bfb-a330-2028f637eb91\"},\"query\":{\"match\":{\"requestId\":{\"query\":\"5dd038dd-1b56-4bfb-a330-2028f637eb91\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":false,\"index\":\"logging-*\",\"key\":\"environment\",\"negate\":true,\"value\":\"VALE-HOM\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-HOM\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"request-*\",\"key\":\"simpleName\",\"value\":\"tremHoraParado\",\"disabled\":false},\"query\":{\"match\":{\"simpleName\":{\"query\":\"tremHoraParado\",\"type\":\"phrase\"}}}}],\"index\":\"request-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Tempo THP"
+}

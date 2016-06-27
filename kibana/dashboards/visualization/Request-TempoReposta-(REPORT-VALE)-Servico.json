@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"area\",\"params\":{\"addLegend\":false,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"overlap\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"spyPerPage\":10,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTime\"}},{\"id\":\"5\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"custom\",\"customInterval\":\"10m\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"servername\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"4\",\"row\":true}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"query\":\"environment:VALE-SERVICO-PRD AND servername:*servico*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Request-TempoReposta (REPORT VALE) - Servico"
+}

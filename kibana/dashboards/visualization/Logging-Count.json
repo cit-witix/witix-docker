@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"60\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[],\"index\":\"logging-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}}},\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "Logging-Count"
+}

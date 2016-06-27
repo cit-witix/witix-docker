@@ -1,0 +1,9 @@
+{
+  "visState": "{\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"executionTimeSecond\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"h\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"request-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tag: confirmacaoMovimentacaoJob AND environment: \\\"VALE-SERVICO-PRD\\\"\"}},\"filter\":[]}"
+  }, 
+  "version": 1, 
+  "description": "", 
+  "title": "andremp - Confirma\u00e7\u00e3o movimenta\u00e7\u00e3o"
+}

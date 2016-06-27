@@ -1,0 +1,47 @@
+{
+	"template": "database-*",
+	"mappings": {
+		"_default_": {
+			"_ttl" : { "enabled" : true, "default": "1w" },
+			"_all": { "enabled": false },
+			"properties": {
+				"@timestamp": {
+					"type": "date",
+					"format": "dateOptionalTime"
+				},
+				"environment": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"hostname": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"application": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"servername": {
+					"type": "string",
+					"index": "not_analyzed"
+				},				
+				"module": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"requestId": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"requestName": {
+					"type": "string",
+					"index": "not_analyzed"
+				},	
+				"sql": {
+					"type": "string",
+					"store": "false"
+				}								
+			}
+		}
+	}
+}

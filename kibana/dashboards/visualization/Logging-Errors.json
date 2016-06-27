@@ -1,0 +1,10 @@
+{
+  "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"shareYAxis\":true},\"type\":\"histogram\"}", 
+  "description": "", 
+  "title": "Logging-Errors", 
+  "version": 1, 
+  "savedSearchId": "Logging-TodayErrors", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[]}"
+  }
+}

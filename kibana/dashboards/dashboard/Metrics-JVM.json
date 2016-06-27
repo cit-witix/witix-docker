@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now/d", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Metrics-JVM", 
+  "panelsJSON": "[{\"col\":1,\"id\":\"Metrics-%HeapUsage\",\"row\":1,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Metrics-CountGC\",\"row\":4,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Metrics-OS-CPU\",\"row\":7,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"}]", 
+  "timeTo": "now/d", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"metrics-*\",\"key\":\"environment\",\"value\":\"VALE-PRJ\",\"disabled\":true},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRJ\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"metrics-*\",\"key\":\"environment\",\"value\":\"VALE-DEV\",\"disabled\":true},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-DEV\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"metrics-*\",\"key\":\"environment\",\"value\":\"VALE-HOM\",\"disabled\":true},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-HOM\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":false,\"index\":\"metrics-*\",\"key\":\"environment\",\"value\":\"VALE-PRD\",\"disabled\":false},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+  }
+}

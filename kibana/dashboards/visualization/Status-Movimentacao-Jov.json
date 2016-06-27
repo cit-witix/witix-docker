@@ -1,0 +1,10 @@
+{
+  "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*Registro processado com sucesso*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message:*Falha ao processar o registroInterfaceControleMovimentacaoSecaoBloqueio*\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}", 
+  "description": "", 
+  "title": "Status Movimentacao Jov", 
+  "version": 1, 
+  "savedSearchId": "LoggingMovimentacaoJob", 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[]}"
+  }
+}

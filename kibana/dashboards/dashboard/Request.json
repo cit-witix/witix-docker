@@ -1,0 +1,13 @@
+{
+  "hits": 0, 
+  "timeFrom": "now/d", 
+  "timeRestore": true, 
+  "description": "", 
+  "title": "Request", 
+  "panelsJSON": "[{\"col\":5,\"id\":\"Request-HistogramaPorModulo\",\"row\":1,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Request-TempoReposta\",\"row\":3,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"Request-TopPercentiles\",\"row\":5,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":10,\"id\":\"Request-TopPages\",\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"col\":8,\"id\":\"Request-Browsers\",\"row\":6,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"Requests-Environment-Pie\",\"row\":6,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-Pie-Username\",\"row\":3,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Request-PaginasVisitadas\",\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"Request-UniqueUsername\",\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"id\":\"Request-Status-Code\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":6}]", 
+  "timeTo": "now/d", 
+  "version": 1, 
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"request-*\",\"key\":\"name\",\"negate\":true,\"value\":\"GET /system/ping\"},\"query\":{\"match\":{\"name\":{\"query\":\"GET /system/ping\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRJ\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRJ\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-DEV\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-DEV\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":true,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-HOM\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-HOM\",\"type\":\"phrase\"}}}},{\"meta\":{\"disabled\":false,\"index\":\"request-*\",\"key\":\"environment\",\"negate\":false,\"value\":\"VALE-PRD\"},\"query\":{\"match\":{\"environment\":{\"query\":\"VALE-PRD\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"name:*app*\"}}}]}"
+  }
+}

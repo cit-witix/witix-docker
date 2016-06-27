@@ -1,0 +1,19 @@
+es_host: witix-elasticsearch
+es_port: 9200
+name: log_error
+type: frequency
+index: logstash-*
+# link to a kibana dashboard with correct time settings
+use_kibana4_dashboard: "http://localhost:5601/app/kibana#/dashboard/monitoring-dashboard"
+num_events: 1
+timeframe:
+    minutes: 1
+filter:
+- query:
+    query_string:
+      query: "level:ERROR"
+alert:
+- "email"
+- "debug"
+email:
+- "elastalert@example.com"

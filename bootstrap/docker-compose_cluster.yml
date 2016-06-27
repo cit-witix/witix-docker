@@ -1,0 +1,21 @@
+version: '2'
+services:
+    elasticsearch_master:
+        image: ciandtsoftware/witix-elasticsearch:3.0.0-alpha
+        command: "elasticsearch -Des.node.master=true -Des.node.data=false"
+        environment:
+           - CLUSTER_NAME=witix-cluster
+           - ES_HEAP_SIZE=512m
+        ports:
+          - "9200:9200"
+          - "9300:9300"
+    elasticsearch-node:
+        image: ciandtsoftware/witix-elasticsearch:3.0.0-alpha
+        command: "elasticsearch -Des.discovery.zen.ping.unicast.hosts=elasticsearch_master"
+        links:
+          - elasticsearch_master
+        volumes:
+          - "/opt/elasticsearch/data"
+        environment:
+          - CLUSTER_NAME=witix-cluster
+          - ES_HEAP_SIZE=512m
