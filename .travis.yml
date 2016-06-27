@@ -1,0 +1,13 @@
+sudo: required  
+services:  
+  - docker
+install:  
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+
+script:  
+  - docker build -f elasticsearch/Dockerfile -t $DOCKER_IMAGE_NAME:$TRAVIS_COMMIT .
+  - docker tag $DOCKER_IMAGE_NAME:$TRAVIS_COMMIT $DOCKER_IMAGE_NAME:travis-$TRAVIS_BUILD_NUMBER
+  - docker push $DOCKER_IMAGE_NAME
+
+env:  
+  - DOCKER_IMAGE_NAME=ciandtsoftware/witix-elasticsearch
