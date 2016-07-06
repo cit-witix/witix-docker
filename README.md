@@ -13,24 +13,30 @@ $ cd witix-docker
 $ docker-compose up
 ```
 
-O comendo **docker-compose up** já inicia três containers configurados no arquivo docker-compose.yml, fazendo os links necessários. Importante observar que primeira execução será mais demorada, pois as imagens serão construídas (build) e as dependencias (kibana, elasticsearch, logstash, debian) baixadas do repositório central [docker hub](http://hub.docker.com). O arquivo abaixo mostra a configuração do docker-compose
+O comendo **docker-compose up** já inicia quatro containers configurados no arquivo docker-compose.yml, fazendo os links necessários. Importante observar que primeira execução será mais demorada, pois as imagens serão construídas (build) e as dependencias (kibana, elasticsearch, logstash, debian) baixadas do repositório central [docker hub](http://hub.docker.com). 
+Observe que um dos containers em questão é um nginx que é resposável pela autenticação do usuário. Para acessar as urls é necessário informar usuário/senha que é witix/witix.
+O arquivo abaixo mostra a configuração do docker-compose
 
 ```yaml
-version: '2'
+version: '3'
 services:
     witix-elasticsearch:
         build: elasticsearch/
         ports:
-            - "9200:9200"
             - "9300:9300"
+        # uncomment this section to have elasticsearch data persisted to a volume
+        #volumes:
+        #   - ./elasticsearch/data:/usr/share/elasticsearch/data
+        networks:
+            - witix
     witix-kibana:
         build: kibana/
         depends_on: 
             - witix-elasticsearch
-        ports:
-            - "5601:5601"
         environment:
             - ELASTICSEARCH_URL=http://witix-elasticsearch:9200    
+        networks:
+            - witix
     witix-elastalert:
         build: elastalert/
         depends_on: 
@@ -38,9 +44,20 @@ services:
         volumes:
             - ./elastalert/conf/config.yaml:/opt/elastalert/config.yaml
             - ./elastalert/conf/rules/:/opt/elastalert/rules                    
+        networks:
+            - witix
+    witix-nginx:
+        build: nginx/
+        depends_on: 
+            - witix-elasticsearch     
+        ports:
+            - "5601:5601"
+            - "9200:9200"                       
+        networks:
+            - witix                    
 ```
 
-Após iniciar os três containers, utilize as URLs abaixo para acessar os serviços: 
+Após iniciar os quatro containers, utilize as URLs abaixo para acessar os serviços: 
 
 * http://localhost:9200/_plugin/head
 * http://localhost:5601
