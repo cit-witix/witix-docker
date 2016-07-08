@@ -5,13 +5,28 @@ install:
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
 
 script:  
-  - docker build -f elasticsearch/Dockerfile -t ciandtsoftware/witix-elasticsearch:latest .
+  - cd elasticsearch
+  - docker build -t ciandtsoftware/witix-elasticsearch:latest .
   - docker tag ciandtsoftware/witix-elasticsearch:latest ciandtsoftware/witix-elasticsearch:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-elasticsearch
-  - cd kibana
+  - cd elasticsearch-kubernetes
+  - docker build -t ciandtsoftware/witix-elasticsearch-kubernetes:latest .
+  - docker tag ciandtsoftware/witix-elasticsearch-kubernetes:latest ciandtsoftware/witix-elasticsearch-kubernetes:3.0.$TRAVIS_BUILD_NUMBER-alpha
+  - docker push ciandtsoftware/witix-elasticsearch-kubernetes  
+  - cd ../kibana
   - docker build -t ciandtsoftware/witix-kibana:latest .
   - docker tag ciandtsoftware/witix-kibana:latest ciandtsoftware/witix-kibana:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-kibana
+  - cd ../elastalert
+  - docker build -t ciandtsoftware/witix-elastalert:latest .
+  - docker tag ciandtsoftware/witix-elastalert:latest ciandtsoftware/witix-elastalert:3.0.$TRAVIS_BUILD_NUMBER-alpha
+  - docker push ciandtsoftware/witix-elastalert
+  - cd ../nginx
+  - docker build -t ciandtsoftware/witix-nginx:latest .
+  - docker tag ciandtsoftware/witix-nginx:latest ciandtsoftware/witix-nginx:3.0.$TRAVIS_BUILD_NUMBER-alpha
+  - docker push ciandtsoftware/witix-nginx
+  
+
 
 env:  
   - DOCKER_IMAGE_NAME=ciandtsoftware/witix-elasticsearch
