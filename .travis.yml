@@ -9,7 +9,7 @@ script:
   - docker tag ciandtsoftware/witix-elasticsearch:latest ciandtsoftware/witix-elasticsearch:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-elasticsearch
   - cd kibana
-  - docker build -f kibana/Dockerfile -t ciandtsoftware/witix-kibana:latest .
+  - docker build -t ciandtsoftware/witix-kibana:latest .
   - docker tag ciandtsoftware/witix-kibana:latest ciandtsoftware/witix-kibana:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-kibana
 
