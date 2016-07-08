@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get -y install curl
 
 ## config kibana
-COPY conf/kibana.yml /opt/kibana/config/kibana.yml
+COPY ./conf/kibana.yml /opt/kibana/config/kibana.yml
 
 # Pendencia_Auth COPY conf/auth.js /opt/kibana/src/lib/auth.js
 
