@@ -8,6 +8,9 @@ script:
   - docker build -f elasticsearch/Dockerfile -t ciandtsoftware/witix-elasticsearch:latest .
   - docker tag ciandtsoftware/witix-elasticsearch:latest ciandtsoftware/witix-elasticsearch:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-elasticsearch
+  - docker build -f kibana/Dockerfile -t ciandtsoftware/witix-kibana:latest .
+  - docker tag ciandtsoftware/witix-kibana:latest ciandtsoftware/witix-kibana:3.0.$TRAVIS_BUILD_NUMBER-alpha
+  - docker push ciandtsoftware/witix-kibana
 
 env:  
   - DOCKER_IMAGE_NAME=ciandtsoftware/witix-elasticsearch
