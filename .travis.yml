@@ -9,7 +9,7 @@ script:
   - docker build -t ciandtsoftware/witix-elasticsearch:latest .
   - docker tag ciandtsoftware/witix-elasticsearch:latest ciandtsoftware/witix-elasticsearch:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-elasticsearch
-  - cd elasticsearch-kubernetes
+  - cd ../elasticsearch-kubernetes
   - docker build -t ciandtsoftware/witix-elasticsearch-kubernetes:latest .
   - docker tag ciandtsoftware/witix-elasticsearch-kubernetes:latest ciandtsoftware/witix-elasticsearch-kubernetes:3.0.$TRAVIS_BUILD_NUMBER-alpha
   - docker push ciandtsoftware/witix-elasticsearch-kubernetes  
