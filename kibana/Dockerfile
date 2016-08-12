@@ -7,10 +7,12 @@ RUN apt-get -y install curl
 ## config kibana
 COPY ./conf/kibana.yml /opt/kibana/config/kibana.yml
 
-# Pendencia_Auth COPY conf/auth.js /opt/kibana/src/lib/auth.js
-
 RUN kibana plugin --install elastic/timelion
 RUN kibana plugin --install elastic/sense
+RUN kibana plugin --install prelert_swimlane_vis -u https://github.com/prelert/kibana-swimlane-vis/archive/v0.1.0.tar.gz
+RUN kibana plugin --install kibi_timeline_vis -u https://github.com/sirensolutions/kibi_timeline_vis/raw/0.1.4/target/kibi_timeline_vis-0.1.4.zip
+RUN kibana plugin --install heatmap -u https://github.com/stormpython/heatmap/archive/master.zip
+RUN kibana plugin -i tagcloud -u https://github.com/stormpython/tagcloud/archive/master.zip
 
 # set variables
 

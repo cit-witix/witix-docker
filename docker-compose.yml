@@ -26,15 +26,6 @@ services:
             - ./elastalert/conf/rules/:/opt/elastalert/rules                    
         networks:
             - witix
-    witix-nginx:
-        build: nginx/
-        depends_on: 
-            - witix-elasticsearch     
-        ports:
-            - "5601:5601"
-            - "9200:9200"                       
-        networks:
-            - witix
 networks:
     witix:
         ipam:
