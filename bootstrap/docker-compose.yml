@@ -7,6 +7,7 @@ services:
         # uncomment this section to have elasticsearch data persisted to a volume
         #volumes:
         #   - ./elasticsearch/data:/usr/share/elasticsearch/data
+        restart: always
         networks:
             - witix
     witix-kibana:
@@ -15,6 +16,7 @@ services:
             - witix-elasticsearch
         environment:
             - ELASTICSEARCH_URL=http://witix-elasticsearch:9200    
+        restart: always
         networks:
             - witix
     witix-elastalert:
@@ -24,6 +26,10 @@ services:
         volumes:
             - ./elastalert/conf/config.yaml:/opt/elastalert/config.yaml
             - ./elastalert/conf/rules/:/opt/elastalert/rules                    
+        restart: always
+        logging:
+            options:
+                max-size: "10m"
         networks:
             - witix
     witix-nginx:
@@ -34,6 +40,7 @@ services:
         ports:
             - "5601:5601"
             - "9200:9200"                       
+        restart: always
         networks:
             - witix
 networks:

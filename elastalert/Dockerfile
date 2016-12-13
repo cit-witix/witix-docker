@@ -6,7 +6,7 @@ MAINTAINER mlacerda@ciandt.com
 # config elastalert
 ENV SET_CONTAINER_TIMEZONE false
 ENV CONTAINER_TIMEZONE America/Los_Angeles
-ENV ELASTALERT_VERSION 0.0.75
+ENV ELASTALERT_VERSION 0.1.4
 ENV ELASTALERT_URL https://github.com/Yelp/elastalert/archive/v${ELASTALERT_VERSION}.tar.gz
 ENV ELASTALERT_HOME /opt/elastalert
 ENV RULES_DIRECTORY /opt/elastalert/rules
