@@ -77,3 +77,5 @@
 
 # Set this to true to log all events, including system usage information and all requests.
 # logging.verbose: false
+
+elasticsearch.password: "changeme"

@@ -4,26 +4,20 @@ services:
         build: elasticsearch/
         ports:
             - "9300:9300"
+            - "9200:9200"
         # uncomment this section to have elasticsearch data persisted to a volume
         #volumes:
         #   - ./elasticsearch/data:/usr/share/elasticsearch/data
         networks:
             - witix
-    witix-kibana:
+    witix-kibana-2:
         build: kibana/
+        ports:
+            - "5601:5601"
         depends_on: 
             - witix-elasticsearch
         environment:
             - ELASTICSEARCH_URL=http://witix-elasticsearch:9200    
-        networks:
-            - witix
-    witix-elastalert:
-        build: elastalert/
-        depends_on: 
-            - witix-elasticsearch
-        volumes:
-            - ./elastalert/conf/config.yaml:/opt/elastalert/config.yaml
-            - ./elastalert/conf/rules/:/opt/elastalert/rules                    
         networks:
             - witix
 networks:
